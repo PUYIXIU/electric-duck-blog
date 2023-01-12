@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: E-Duck
+subtitle: Please tell me more jokes | Ha Ha Ha
+description: 'Please include by yourself'
+keywords: 'blog'
+author: 'Electric Duck'
+language:
+  - zh-CN
+  - en
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://EletricDuck.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -61,7 +63,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: '/posts'
   per_page: 10
   order_by: -date
 
@@ -105,3 +107,7 @@ deploy:
   type: git
   repo: https://github.com/PUYIXIU/PUYIXIU.github.io.git
   branch: main
+
+search:
+  field: post, wiki
+

@@ -1,0 +1,48 @@
+BoyfriendtoDeath:
+  name: BoyfrientoDeath
+  title: Boyfrien to Death全结局攻略
+  subtitle: 'Boyfriend to Death 攻略'
+  tags: Game Wiki
+  cover: true
+  logo:
+    src: /assets/image/toby_dog.jpg
+    small: 112px
+    large: 240px
+  description: Boyfriend to Death
+  sections:
+    'Strade': [0, 9]
+JavaScript:
+  name: JavaScript
+  title: 《JavaScript 高级程序设计（第4版）》
+  subtitle:
+  tags: 语言学习
+  cover: true
+  logo:
+    src: /assets/image/toby_dog.jpg
+    small: 112px
+    large: 240px
+  description: JavaScript学习笔记
+  sections:
+    '第1章': [10, 19]
+    '第8章': [80, 89]
+    '第9章 代理与反射': [90,99]
+    '第10章 函数': [100,109]
+    '第11章 期约与异步函数': [110,119]
+    '第12章 BOM': [120,129]
+WebGL:
+  name: WebGL
+  title: 《WebGL编程指南》
+  subtitle:
+  tags: Web技术
+  cover: true
+  logo:
+    src: /assets/image/toby_dog.jpg
+    small: 112px
+    large: 240px
+  description: webGL学习笔记
+  sections:
+    '第1章 ': [0, 9]
+    '第2章 ': [10, 19]
+    '第3章 ': [20, 29]
+    '第4章 ': [30, 39]
+    '第5章 ': [40, 49]

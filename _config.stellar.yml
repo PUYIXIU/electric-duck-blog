@@ -1,23 +1,90 @@
 open_graph:
   enable: true
   twitter_id:
+
 sidebar:
+  logo:
+    title: '[<img no-lazy height="32px" src="/assets/image/toby_dog.jpg">](/)'
   menu:
-    post: '[btn.blog](/)'
+    home: '[btn.home](/)'
+    post: '[btn.blog](/posts/)'
     wiki: '[btn.wiki](/wiki/)'
-    notes: '[笔记](/notes/)'
-    more: '[更多](/more/)'
-footer:
-  social:
-    github:
-      icon: '<img src="/assets/placeholder/social/08a41b181ce68.svg"/>'
-      url: https://
-    music:
-      icon: '<img src="/assets/placeholder/social/3845874.svg"/>'
-      url: https://
-    unsplash:
-      icon: '<img src="/assets/placeholder/social/3616429.svg"/>'
-      url: https://
-    comments:
-      icon: '<img src="/assets/placeholder/social/942ebbf1a4b91.svg"/>'
-      url: https://
+    notes: '[Notes](/notes/)'
+  widgets:
+    home: # 主页
+    blog_index:  # 博客索引页
+    wiki_index:  # 文档索引页
+    others: ghuser, tagcloud, toc, related # 其他
+    post: tagcloud, toc, related  # 文章内页
+    wiki: toc # 文档内页
+    page: tagcloud, toc  #其他 layout:page 的页面
+
+#footer:
+#  social:
+#    github:
+#      icon: '<img src="/assets/placeholder/social/08a41b181ce68.svg"/>'
+#      url: https://
+#    music:
+#      icon: '<img src="/assets/placeholder/social/3845874.svg"/>'
+#      url: https://
+#    unsplash:
+#      icon: '<img src="/assets/placeholder/social/3616429.svg"/>'
+#      url: https://
+#    comments:
+#      icon: '<img src="/assets/placeholder/social/942ebbf1a4b91.svg"/>'
+#      url: https://
+
+style:
+  font-size: 16px
+  font-family:
+    logo: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    body: 'system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+  color:
+    common:
+      theme: '#1BCDFC' # 主题色
+      accent: '#ff5722' # 强调色
+      link: '#2196f3' # 超链接颜色
+      button: '#1BCDFC' # 按钮颜色
+      hover: '#ff5722' # 按钮高亮颜色
+    light:
+      background: '#f8f8f8' # 浅色背景颜色
+      block: '#f2f2f2' # 块背景颜色
+      card: white # 卡片背景颜色
+      title: '#000' # 标题文本颜色
+      text: '#333' # 正文文本颜色
+      code: '#111' # 行内代码颜色
+    dark:
+      background: '#313438' # 深色背景颜色
+      background-mobile: black # 移动端深色背景（OLED调成纯黑可以省电）
+      block: '#2B2F33' # 块背景颜色
+      card: '#464D57' # 卡片背景颜色
+      title: '#fff' # 标题文本颜色
+      text: '#eee' # 正文文本颜色
+      code: '#ff7043' # 行内代码颜色
+# 默认关闭，目前已知scrollreveal与lazyload同时打开时会有footer不显示的bug
+scrollreveal:
+  enable: true
+  js: https://fastly.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+  distance: 4px # 执行距离
+  duration: 400 # ms # 执行时长
+  interval: 100 # ms # 执行间隔（时间）
+  scale: 0.1 # 0.1~1 # 执行方式（缩放）
+# 默认打开
+lazyload:
+  enable: true # [hexo clean && hexo s] is required after changing this value.
+  js: https://fastly.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js
+  transition: blur # blur, fade
+# 默认打开
+loading:
+  loading: 正在加载
+  error: 加载失败，请稍后重试。
+tag_plugins:
+  image:
+    fancybox: true
+  emoji:
+    default: https://fastly.jsdelivr.net/gh/cdn-x/emoji/qq/%s.gif
+    twemoji: https://fastly.jsdelivr.net/gh/twitter/twemoji/assets/svg/%s.svg
+    qq: https://fastly.jsdelivr.net/gh/cdn-x/emoji/qq/%s.gif
+    aru: https://fastly.jsdelivr.net/gh/cdn-x/emoji/aru-l/%s.gif
+    tieba: https://fastly.jsdelivr.net/gh/cdn-x/emoji/tieba/%s.png

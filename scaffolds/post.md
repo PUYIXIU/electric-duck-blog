@@ -1,5 +1,15 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+tags: []
+categories: []
+description:
+cover:
+banner:
+poster:
+    topic:
+    headline:
+    caption:
+    color:
+
 ---

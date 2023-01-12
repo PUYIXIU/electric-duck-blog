@@ -1,0 +1,76 @@
+toc: #文章/文档 目录树
+  layout: toc
+  list_number: false
+  min_depth: 1
+  max_depth: 5
+  fallback: recent #没有toc的文章显示recent
+
+recent:
+#  layout: recent
+#  rss: #
+#  limit: 5
+
+relate: #显示相同tags的其他项目列表
+  layout: related
+
+welcome: # 可以显示markdown文本内容
+#  layout: markdown
+#  title: 欢迎
+#  content: |
+#    欢迎使用!
+  layout: ghuser
+  username: PUYIXIU
+  avatar: true
+  menu: true
+
+
+tagcloud: # 标签云
+  layout: tagcloud
+  title: 标签云
+  min_font: 12
+  max_font: 24
+  amount: 100
+  orderby: name
+  order: 1
+  color: false
+  start_color:
+  end_color:
+  show_count: false
+
+ghuser: #显示GitHub用户基础信息
+  layout: ghuser
+  username: PUYIXIU
+  avatar: true
+  menu: true
+
+ghrepo: #显示GitHub仓库基础信息
+  layout: ghrepo
+
+#timeline:
+#  layout: timeline
+#  title: 近期动态
+#  api: https://api.github.com/repos/xaoxuu/hexo-theme-stellar/issues
+#  user:
+#  hide:
+
+#search:
+#  layout: search
+#  filter: auto # auto or '/path'
+#  placeholder: 文章搜索 # 搜索框处显示的文字
+#search_blog:
+#  layout: search
+#  filter: /blog/ # or /posts/ ...
+#  placeholder: 文章搜索
+
+Notes:
+  layout: wiki
+  name: 笔记
+  title: 笔记title
+  description: 笔记description
+  index: false
+  tags: 知识库
+  sections:
+    '日常问题解决方案': [ 100, 199 ]
+    '移动端开发笔记': [ 200, 299 ]
+    '前端学习笔记': [ 300, 399 ]
+    '在线工具': [ 400, 499 ]
